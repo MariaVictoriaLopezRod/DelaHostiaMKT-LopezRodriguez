@@ -1,0 +1,141 @@
+// VARIABLES
+
+$size-p: 1.8rem;
+$size-h1: 3.0rem;
+$size-h2: 1.5rem;
+$font-title: 'Saira Semi Condensed', sans-serif;
+$font-text: 'Roboto', sans-serif;
+
+//EXTENDS
+
+.header-style{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nav-style{
+    font-size: $size-h2;
+    font-family: $font-title;
+    color: #F2784B;
+    border:#F2784B 1px solid;
+    border-radius: 50px;
+    padding: 5px;
+    align-items: center;
+}
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// MIXINGS
+
+@mixin container-colors($bc, $borderbt,$bordertp){
+    background-color: $bc;
+    border-bottom: $borderbt;
+    border-top: $bordertp;
+}
+
+/* ESTILOS GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body{
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+}
+
+fieldset {
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #F2784B;
+}
+
+.encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    @include container-colors(#292929, #F2784B solid 2px,none)
+}
+
+.frase-encabezado{
+    font-size: $size-h1;
+    font-family: $font-title;
+    color: #F2784B;
+}
+.titulo-home{
+    font-size: 2.5rem;
+    font-family: $font-title;
+    color: #F2784B;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px ;
+}
+
+p{
+font-size: $size-p;
+font-family: $font-text;
+color: #000000;
+}
+
+h2{
+    font-size:$size-h2;
+    font-family: $font-title;
+}
+
+.logo-agencia{
+    width: 20%;
+}
+
+.menu-navegacion {
+    @extend .nav-flex;   
+}
+
+.seccion-menu-navegacion {
+    @extend .nav-style;
+}
+
+.seccion-abierta {
+    @extend .nav-style;
+    color: #000000;
+    border: none;
+    font-weight: bold;
+    background-color: #F2784B;
+}
+
+.footer-container{
+    @extend .footer-flex;
+    @include container-colors(#292929,none,#F2784B solid 2px)
+}
+
+.lista-redes{
+    @extend .footer-flex;
+    flex-direction: row;
+}
+
+.imagen-icono-redes{
+    width: 50px;
+}

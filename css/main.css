@@ -1,0 +1,269 @@
+.header-style {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.nav-flex, .menu-navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.nav-style, .seccion-menu-navegacion, .seccion-abierta {
+  font-size: 1.5rem;
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: #F2784B;
+  border: #F2784B 1px solid;
+  border-radius: 50px;
+  padding: 5px;
+  align-items: center; }
+
+.footer-flex, .footer-container, .lista-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+/* ESTILOS GLOBALES */
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; }
+
+body {
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png"); }
+
+fieldset {
+  border: none; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #F2784B; }
+
+.encabezado {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #292929;
+  border-bottom: #F2784B solid 2px;
+  border-top: none; }
+
+.frase-encabezado {
+  font-size: 3rem;
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: #F2784B; }
+
+.titulo-home {
+  font-size: 2.5rem;
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: #F2784B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px; }
+
+p {
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  color: #000000; }
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Saira Semi Condensed", sans-serif; }
+
+.logo-agencia {
+  width: 20%; }
+
+.seccion-abierta {
+  color: #000000;
+  border: none;
+  font-weight: bold;
+  background-color: #F2784B; }
+
+.footer-container {
+  background-color: #292929;
+  border-bottom: none;
+  border-top: #F2784B solid 2px; }
+
+.lista-redes {
+  flex-direction: row; }
+
+.imagen-icono-redes {
+  width: 50px; }
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES HOME - DESKTOP */
+@media screen and (min-width: 1024px) {
+  .grid-home {
+    display: grid;
+    grid-template-areas: "articulo-de-interes articulo-de-interes" "contenedor-texto-articulo-uno img-articulo-uno" "contenedor-texto-articulo-uno img-articulo-uno";
+    grid-template-rows: 100px 150px 150px;
+    grid-template-columns: 600px 400px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .contenedor-formulario-suscripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 100px;
+    margin-top: 50px; }
+    .contenedor-formulario-suscripcion .formulario-suscripcion {
+      color: black;
+      background-color: #F2784B;
+      padding: 10px;
+      margin-top: 20px; }
+      .contenedor-formulario-suscripcion .formulario-suscripcion .item-formulario-suscripcion {
+        text-align: center; }
+  .articulo-de-interes {
+    grid-area: articulo-de-interes;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .articulo-de-interes .imagen-cohete {
+      width: 20%; }
+    .articulo-de-interes .marketing-news {
+      background-color: #F2784B;
+      color: black;
+      font-family: 'Saira Semi Condensed', sans-serif;
+      font-size: 30px;
+      border-radius: 10px; }
+  .contenedor-texto-articulo-uno {
+    grid-area: contenedor-texto-articulo-uno; }
+  .titulo-articulo-uno {
+    color: #F2784B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .texto-articulo-uno {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #F2784B; }
+  .img-articulo-uno {
+    grid-area: img-articulo-uno;
+    width: 300px; }
+  .link-articulo-uno {
+    font-size: 25px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline #F2784B;
+    margin-left: 230px;
+    margin-bottom: 40px; } }
+
+/*MEDIA QUERIES TABLET*/
+/*MEDIA QUERIES HOME - TABLET*/
+@media screen and (max-width: 1023px) {
+  .grid-home {
+    display: grid;
+    grid-template-areas: "articulo-de-interes" "img-articulo-uno" "contenedor-texto-articulo-uno";
+    grid-template-rows: 100px 200px 300px;
+    grid-template-columns: 500px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .logo-agencia {
+    width: 30%; }
+  .frase-encabezado {
+    display: none; }
+  .contenedor-formulario-suscripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 140px;
+    margin-top: 50px; }
+    .contenedor-formulario-suscripcion .formulario-suscripcion {
+      color: black;
+      background-color: #F2784B;
+      padding: 10px;
+      margin-top: 20px; }
+      .contenedor-formulario-suscripcion .formulario-suscripcion .item-formulario-suscripcion {
+        text-align: center; }
+  .articulo-de-interes {
+    grid-area: articulo-de-interes;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .articulo-de-interes .imagen-cohete {
+      width: 15%; }
+    .articulo-de-interes .marketing-news {
+      background-color: #F2784B;
+      color: black;
+      font-family: 'Saira Semi Condensed', sans-serif;
+      font-size: 25px;
+      border-radius: 10px; }
+  .contenedor-texto-articulo-uno {
+    grid-area: contenedor-texto-articulo-uno; }
+  .titulo-articulo-uno {
+    color: #F2784B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .texto-articulo-uno {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #F2784B;
+    width: 400px;
+    text-align: center;
+    margin-left: 60px; }
+  .img-articulo-uno {
+    grid-area: img-articulo-uno;
+    width: 250px; }
+  .link-articulo-uno {
+    width: 250px;
+    margin-left: 220px; } }
+
+/* MEDIA QUERIES - CELULAR */
+/* MEDIA QUERIES HOME - CELULAR */
+@media screen and (max-width: 646px) {
+  /* GRID LAYOUT HOME - CELULAR */
+  .grid-home {
+    display: none; }
+  /* ENCABEZADO HOME - CELULAR */
+  .frase-encabezado {
+    display: none; }
+  .logo-agencia {
+    width: 50%; }
+  .menu-navegacion {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 70px; }
+  .seccion-menu-navegacion {
+    font-size: 20px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: #292929;
+    color: #F2784B;
+    border: #F2784B 1px solid;
+    border-radius: 50px;
+    padding: 6px;
+    margin: 6px; }
+  .seccion-abierta {
+    background-color: #F2784B;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 2px; }
+  .titulo-home {
+    display: none; }
+  .formulario-suscripcion {
+    display: none; } }
