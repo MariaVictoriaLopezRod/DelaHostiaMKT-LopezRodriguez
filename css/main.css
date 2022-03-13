@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header-style {
   display: flex;
   flex-flow: row wrap;
@@ -60,7 +61,7 @@ a {
   font-family: "Saira Semi Condensed", sans-serif;
   color: #F2784B; }
 
-.titulo-home {
+.titulo-seo {
   font-size: 2.5rem;
   font-family: "Saira Semi Condensed", sans-serif;
   color: #F2784B;
@@ -87,10 +88,31 @@ h2 {
   font-weight: bold;
   background-color: #F2784B; }
 
+.titulo-seccion {
+  color: #F2784B;
+  font-size: 3rem;
+  font-family: "Saira Semi Condensed", sans-serif; }
+
+.resaltar {
+  color: white; }
+
+.imagen-nosotros {
+  grid-area: imagen-nosotros;
+  width: 300px; }
+
+.parrafo-nosotros {
+  grid-area: parrafo-nosotros;
+  color: #F2784B;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  width: 500px;
+  text-align: center; }
+
 .footer-container {
   background-color: #292929;
   border-bottom: none;
-  border-top: #F2784B solid 2px; }
+  border-top: #F2784B solid 2px;
+  margin-top: 20px; }
 
 .lista-redes {
   flex-direction: row; }
@@ -135,20 +157,20 @@ h2 {
     .articulo-de-interes .marketing-news {
       background-color: #F2784B;
       color: black;
-      font-family: 'Saira Semi Condensed', sans-serif;
+      font-family: "Saira Semi Condensed", sans-serif;
       font-size: 30px;
       border-radius: 10px; }
   .contenedor-texto-articulo-uno {
     grid-area: contenedor-texto-articulo-uno; }
   .titulo-articulo-uno {
     color: #F2784B;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px; }
   .texto-articulo-uno {
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
     color: #F2784B; }
   .img-articulo-uno {
@@ -157,10 +179,68 @@ h2 {
   .link-articulo-uno {
     font-size: 25px;
     color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-decoration: underline #F2784B;
     margin-left: 230px;
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  /* SECCION NOSOTROS - DESKTOP */
+  /* GRID LAYOUT SECCION NOSOTROS - DESKTOP */
+  .grid-nosotros {
+    display: grid;
+    grid-template-areas: "titulo-nosotros titulo-nosotros" "parrafo-nosotros imagen-nosotros";
+    grid-template-rows: 150px 350px;
+    grid-template-columns: 600px 400px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 90px; }
+  .titulo-seccion-nosotros {
+    grid-area: titulo-nosotros; }
+  /*SECCION NUESTROS SERVICIOS - DESKTOP */
+  /* GRID LAYOUT SECCION NUESTROS SERVICIOS - DESKTOP */
+  .grid-nuestros-servicios {
+    display: grid;
+    grid-template-areas: "titulo-seccion titulo-seccion" "parrafo parrafo" "lista-servicios lista-servicios" "parrafo-dos-nuestros-servicios parrafo-dos-nuestros-servicios";
+    grid-template-rows: 110px 160px 310px 110px;
+    grid-template-columns: 200px 200px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .titulo-nuestros-servicios {
+    grid-area: titulo-seccion; }
+  .parrafo-nuestros-servicios {
+    grid-area: parrafo;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    width: 500px;
+    text-align: center; }
+  .contenedor-lista-servicios {
+    grid-area: lista-servicios;
+    display: flex;
+    flex-direction: column; }
+  .lista-servicios {
+    font-size: 22px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    color: #292929;
+    background-color: #F2784B;
+    border: #292929 3px solid;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px; }
+  .parrafo-dos-nuestros-servicios {
+    grid-area: parrafo-dos-nuestros-servicios;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    width: 500px;
+    text-align: center; }
+  .highlight {
+    color: #292929;
+    background-color: #F2784B; } }
 
 /*MEDIA QUERIES TABLET*/
 /*MEDIA QUERIES HOME - TABLET*/
@@ -183,7 +263,7 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 140px;
     margin-top: 50px; }
     .contenedor-formulario-suscripcion .formulario-suscripcion {
@@ -204,20 +284,20 @@ h2 {
     .articulo-de-interes .marketing-news {
       background-color: #F2784B;
       color: black;
-      font-family: 'Saira Semi Condensed', sans-serif;
+      font-family: "Saira Semi Condensed", sans-serif;
       font-size: 25px;
       border-radius: 10px; }
   .contenedor-texto-articulo-uno {
     grid-area: contenedor-texto-articulo-uno; }
   .titulo-articulo-uno {
     color: #F2784B;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px; }
   .texto-articulo-uno {
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: italic;
     color: #F2784B;
     width: 400px;
@@ -228,7 +308,69 @@ h2 {
     width: 250px; }
   .link-articulo-uno {
     width: 250px;
-    margin-left: 220px; } }
+    margin-left: 220px; }
+  /* MAIN SECCION NOSOTROS - TABLET */
+  /* GRID LAYOUT SECCION NOSOTROS - TABLET */
+  .grid-nosotros {
+    display: grid;
+    grid-template-areas: "titulo-nosotros" "parrafo-nosotros" "imagen-nosotros";
+    grid-template-rows: 100px 250px 350px;
+    grid-template-columns: 550px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .titulo-seccion-nosotros {
+    grid-area: titulo-nosotros; }
+  .parrafo-nosotros {
+    font-size: 15px; }
+  .imagen-nosotros {
+    width: 300px;
+    grid-area: imagen-nosotros; }
+  /* SECCION NUESTROS SERVICIOS - TABLET */
+  /* GRID LAYOUT NUESTROS SERVICIOS - TABLET */
+  .grid-nuestros-servicios {
+    display: grid;
+    grid-template-areas: "titulo-seccion titulo-seccion" "parrafo parrafo" "lista-servicios lista-servicios" "parrafo-dos-nuestros-servicios parrafo-dos-nuestros-servicios";
+    grid-template-rows: 110px 160px 310px 110px;
+    grid-template-columns: 200px 200px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .titulo-nuestros-servicios {
+    grid-area: titulo-seccion; }
+  .parrafo-nuestros-servicios {
+    grid-area: parrafo;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    width: 500px;
+    text-align: center; }
+  .contenedor-lista-servicios {
+    grid-area: lista-servicios;
+    display: flex;
+    flex-direction: column; }
+  .lista-servicios {
+    font-size: 22px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    color: #292929;
+    background-color: #F2784B;
+    border: #292929 3px solid;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px; }
+  .parrafo-dos-nuestros-servicios {
+    grid-area: parrafo-dos-nuestros-servicios;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    width: 500px;
+    text-align: center; }
+  .highlight {
+    color: #292929;
+    background-color: #F2784B; } }
 
 /* MEDIA QUERIES - CELULAR */
 /* MEDIA QUERIES HOME - CELULAR */
@@ -248,7 +390,7 @@ h2 {
     top: 70px; }
   .seccion-menu-navegacion {
     font-size: 20px;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: "Saira Semi Condensed", sans-serif;
     background-color: #292929;
     color: #F2784B;
     border: #F2784B 1px solid;
@@ -259,11 +401,73 @@ h2 {
     background-color: #F2784B;
     color: #000000;
     font-size: 20px;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: "Saira Semi Condensed", sans-serif;
     padding: 5px;
     border-radius: 50px;
     margin: 2px; }
-  .titulo-home {
+  .titulo-seo {
     display: none; }
   .formulario-suscripcion {
-    display: none; } }
+    display: none; }
+  /* SECCION NOSOTROS - CELULAR */
+  /* MENÚ DE NAVEGACÓN SECCION NOSOTROS - CELULAR */
+  .menu-navegacion-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 5px; }
+  .seccion-menu-navegacion-mobile {
+    font-size: 12px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    background-color: #292929;
+    color: #F2784B;
+    border: #F2784B 1px solid;
+    border-radius: 50px;
+    padding: 5px; }
+  .seccion-abierta-mobile {
+    color: #000000;
+    font-size: 12px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    border-radius: 50px; }
+  .titulo-seo {
+    display: none; }
+  .titulo-seccion-nosotros {
+    font-size: 25px; }
+  /* SECCION NUESTROS SERVICIOS - CELULAR */
+  /* GRID LAYOUT NUESTROS SERVICIOS- CELULAR */
+  .grid-nuestros-servicios {
+    display: grid;
+    grid-template-areas: "titulo-servicios titulo-servicios" "parrafo parrafo" "lista-servicios lista-servicios" "parrafo-dos parrafo-dos";
+    grid-template-rows: 90px 100px 250px 90px;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+  .titulo-seccion-nuestros-servicios {
+    grid-area: titulo-servicios;
+    text-align: center; }
+  .parrafo-nuestros-servicios {
+    grid-area: parrafo;
+    width: 450px;
+    text-align: center; }
+  .contenedor-lista-servicios {
+    grid-area: lista-servicios;
+    display: flex;
+    flex-direction: column; }
+  .lista-servicios {
+    font-size: 15px;
+    font-family: "Saira Semi Condensed", sans-serif;
+    color: #292929;
+    background-color: #F2784B;
+    border: #292929 3px solid;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px; }
+  .parrafo-dos-nuestros-servicios {
+    grid-area: parrafo-dos;
+    width: 450px;
+    text-align: center; } }

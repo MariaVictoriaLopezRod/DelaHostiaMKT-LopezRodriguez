@@ -85,7 +85,7 @@ a {
     font-family: $font-title;
     color: #F2784B;
 }
-.titulo-home{
+.titulo-seo{
     font-size: 2.5rem;
     font-family: $font-title;
     color: #F2784B;
@@ -126,9 +126,35 @@ h2{
     background-color: #F2784B;
 }
 
+.titulo-seccion {
+    color: #F2784B;
+    font-size: $size-h1;
+    font-family: $font-title;
+}
+
+.resaltar{
+    color:rgb(255, 255, 255)
+}
+
+.imagen-nosotros{
+    grid-area: imagen-nosotros;
+    width: 300px;
+}
+
+.parrafo-nosotros{
+    grid-area: parrafo-nosotros;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: $font-text;
+    width: 500px;
+    text-align: center;
+}
+
+
 .footer-container{
     @extend .footer-flex;
-    @include container-colors(#292929,none,#F2784B solid 2px)
+    @include container-colors(#292929,none,#F2784B solid 2px);
+    margin-top: 20px;
 }
 
 .lista-redes{
