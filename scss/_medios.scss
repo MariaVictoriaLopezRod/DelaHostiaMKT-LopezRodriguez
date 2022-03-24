@@ -127,8 +127,11 @@ $font-text: 'Roboto', sans-serif;
     align-content: center;
 }
 
-.titulo-nuestros-servicios{
+.titulo-seccion-nuestros-servicios{
 grid-area: titulo-seccion;
+color: #F2784B;
+font-size: $size-h1;
+font-family: $font-title;
 }
 
 .parrafo-nuestros-servicios{
@@ -171,6 +174,80 @@ grid-area: titulo-seccion;
     color: #292929;
     background-color: #F2784B;
 }
+
+/* MEDIA QUERIES MARCAS ASOCIADAS */
+    .grid-marcas-asociadas{
+        display: grid; 
+        grid-template-areas: "titulo-seccion titulo-seccion"
+                         "parrafo-marcas-asociadas parrafo-marcas-asociadas"
+                         "contenedor-marcas-asociadas contenedor-marcas-asociadas";
+        grid-template-rows: 70px 200px 400px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .titulo-seccion-marcas{
+        grid-area: titulo-seccion;
+        color: #F2784B;
+        font-size: 30px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .parrafo-seccion-marcas{
+        grid-area: parrafo-marcas-asociadas;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        width: 500px;
+        text-align: center;
+    }
+
+    .contenedor-marcas-asociadas {
+        grid-area: contenedor-marcas-asociadas;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .item-marcas{
+    font-size: 22px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: #292929;
+    background-color: #F2784B;
+    border:#292929 3px solid;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    }
+
+    /* MEDIA QUERIES CONTACTO - DESKTOP */
+
+    .formulario-contacto {
+        color: black;
+        background-color: #F2784B;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .contenedor-formulario-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 250px;
+        margin-top: 50px;
+    }
+    
+    .item-contacto{
+        text-align: center;
+    }
 }
 
     /*MEDIA QUERIES TABLET*/
@@ -305,8 +382,11 @@ grid-area: titulo-seccion;
     align-content: center;
 }
 
-.titulo-nuestros-servicios{
+.titulo-seccion-nuestros-servicios{
 grid-area: titulo-seccion;
+color: #F2784B;
+font-size: $size-h1;
+font-family: $font-title;
 }
 
 .parrafo-nuestros-servicios{
@@ -349,6 +429,79 @@ grid-area: titulo-seccion;
     background-color: #F2784B;
 }
 
+/* MEDIA QUERIES MARCAS ASOCIDAS -TABLET */
+.grid-marcas-asociadas {  
+    display: grid; 
+    grid-template-areas: "titulo-seccion-marcas titulo-seccion-marcas"
+                     "parrafo-seccion-marcas parrafo-seccion-marcas"
+                     "contenedor-marcas contenedor-marcas";
+    grid-template-rows: 70px 200px 400px;
+    grid-template-columns: 200px 200px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.titulo-seccion-marcas{
+    grid-area: titulo-seccion-marcas;
+    color: #F2784B;
+    font-size: 30px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-align: center;
+    margin-top: 20px
+}
+
+.parrafo-seccion-marcas{
+    grid-area: parrafo-seccion-marcas;
+    color: #F2784B;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    text-align: center;
+}
+
+.contenedor-marcas-asociadas{
+    grid-area: contenedor-marcas;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.item-marcas{
+    font-size: 22px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: #292929;
+    background-color: #F2784B;
+    border:#292929 3px solid;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+/* MEDIA QUERIES CONTACTO - TABLET */
+
+.formulario-contacto {
+    color: black;
+    background-color: #F2784B;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contenedor-formulario-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 250px;
+    margin-top: 50px;
+}
+
+.item-contacto{
+    text-align: center;
+}
 
 }
 
@@ -451,7 +604,7 @@ grid-area: titulo-seccion;
                              "lista-servicios lista-servicios"
                              "parrafo-dos parrafo-dos";
         grid-template-rows: 90px 100px 250px 90px;
-        grid-template-columns: 100px 100px;
+        grid-template-columns: 200px 200px;
         justify-items: center;
         align-items: center;
         justify-content: center;
@@ -461,12 +614,21 @@ grid-area: titulo-seccion;
     .titulo-seccion-nuestros-servicios{
         grid-area: titulo-servicios;
         text-align: center;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: $font-title;
     }
 
     .parrafo-nuestros-servicios{
         grid-area: parrafo;
-        width: 450px;
+        width: 400px;
         text-align: center;
+        font-size: 15px;
+    }
+
+    .palabra-resaltada{
+        position: relative;
+        bottom: 12px;
     }
 
     .contenedor-lista-servicios {
@@ -489,7 +651,114 @@ grid-area: titulo-seccion;
 
     .parrafo-dos-nuestros-servicios{
         grid-area: parrafo-dos;
+        width: 400px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    /* SECCION MARCAS ASOCIADAS - MOBILE */
+    .grid-marcas-asociadas {  
+        display: grid; 
+        grid-template-areas: "titulo-seccion titulo-seccion"
+                         "parrafo-marcas parrafo-marcas"
+                         "contenedor-marcas contenedor-marcas";
+        grid-template-rows: 70px 150px 350px;
+        grid-template-columns: 200px 200px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .menu-navegacion-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .seccion-menu-navegacion-mobile{
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        color: #F2784B;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+    }
+
+    .seccion-abierta-mobile{
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    .titulo-seccion-marcas{
+        grid-area: titulo-seccion;
+        color: #F2784B;
+        font-size: 20px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        text-align: center;
+    }
+
+    .parrafo-seccion-marcas{
+        grid-area: parrafo-marcas;
+        color: #F2784B;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
         width: 450px;
         text-align: center;
     }
+
+    .contenedor-marcas-asociadas{
+        grid-area: contenedor-marcas;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .item-marcas{       
+    font-size: 15px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: #292929;
+    background-color: #F2784B;
+    border:#292929 3px solid;
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    }
+
+    /* MEDIA QUERIES CONTACTO - MOBILE */
+
+    .menu-navegacion-contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .seccion-menu-navegacion-contacto{
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        background-color: #292929;
+        color: #F2784B;
+        border:#F2784B 1px solid;
+        border-radius: 50px;
+        padding: 5px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .seccion-abierta-contacto{
+        background-color: #F2784B;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        padding: 5px;
+        border-radius: 50px;
+        position: relative;
+        bottom: 50px;
+    }
+
 }
